@@ -2,7 +2,7 @@
 
 一个离线使用的 Android 兼职排班与费用管理工具。以“地点 + 日期”管理中午、晚上两班的人员、工资和加班，自动计算人费与当天总额，支持导出完整费用图片。
 
-当前正式版：**1.2.1** · Android **8.0 / API 26 及以上** · Kotlin / Jetpack Compose / Room · MIT 开源。
+当前正式版：**1.2.2** · Android **8.0 / API 26 及以上** · Kotlin / Jetpack Compose / Room · MIT 开源。
 
 [下载正式版 APK](https://github.com/Miao9201/parttime-manager/releases/latest) · [版本记录](CHANGELOG.md) · [第三方许可](THIRD_PARTY_NOTICES.md)
 
@@ -22,7 +22,7 @@
 
 ## 安装
 
-从 [Releases](https://github.com/Miao9201/parttime-manager/releases) 下载 `parttime-manager-1.2.1.apk` 安装。系统可能需要你允许本次来源或进行指纹验证。
+从 [Releases](https://github.com/Miao9201/parttime-manager/releases) 下载 `parttime-manager-1.2.2.apk` 安装。系统可能需要你允许本次来源或进行指纹验证。
 
 升级官方版本时直接覆盖安装，保留已保存记录。自行编译的包使用不同签名时不能覆盖官方 APK。
 
@@ -72,7 +72,9 @@ Debug APK 在 `app/build/outputs/apk/debug/`。首次构建需要下载依赖。
 
 需要自行签名时，可在本机创建已忽略的 `.signing/parttime-local.jks`，密钥别名使用 `parttime`；在 `.signing/local.properties` 中设置对应的 `storePassword`。两个文件始终保留在本机，不要提交。
 
-开源整理阶段按发布要求未重新构建或运行测试，Release APK 使用已经完成的正式版文件。源码中保留 `test` / `androidTest` 供后续开发；这些目录和 Debug 工具不包含在正式 APK 内。本次没有配置会自动运行测试的 GitHub Actions。
+1.2.2 仅更换为蓝色清单、人员和人民币图案的圆角启动图标，去掉外侧白底，同时更新普通及自适应图标资源。业务功能与数据库结构保持完整。Android 自适应图标的最终外轮廓也受桌面启动器遮罩影响。
+
+本版完成 Release 构建及版本、图标资源、签名的静态核对；按发布要求未运行功能或设备测试。源码中保留 `test` / `androidTest` 供后续开发；这些目录和 Debug 工具不包含在正式 APK 内。本次没有配置会自动运行测试的 GitHub Actions。
 
 ## 目录
 
